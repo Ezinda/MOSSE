@@ -1,0 +1,12 @@
+Consulta: consultarecibocobro
+
+SELECT     dbo.recibocobro.nrorden, dbo.recibocobro.empresa, dbo.recibocobroabonan.nomcliente, dbo.recibocobroabonan.comprobante, 
+                      dbo.recibocobroabonan.fechacompro, dbo.recibocobroabonan.importe, dbo.recibocobroabonan.codcuenta, dbo.recibocobro.inicioper, 
+                      dbo.recibocobro.finper, dbo.recibocobroabonan.id, dbo.EMPRESA.razonsocial, dbo.EMPRESA.cuit, dbo.EMPRESA.domicilio, dbo.EMPRESA.localidad, 
+                      dbo.EMPRESA.telefono, dbo.recibocobro.fecha, dbo.clientes.domicilio AS domclien, dbo.clientes.localidad AS locclien, dbo.clientes.cuit AS cuitclien, 
+                      dbo.recibocobroabonan.saldofactura, dbo.recibocobro.idasiento, dbo.recibocobro.anulado
+FROM         dbo.recibocobroabonan INNER JOIN
+                      dbo.recibocobro ON dbo.recibocobroabonan.nrorden = dbo.recibocobro.nrorden AND dbo.recibocobroabonan.empresa = dbo.recibocobro.empresa AND 
+                      dbo.recibocobroabonan.inicioper = dbo.recibocobro.inicioper INNER JOIN
+                      dbo.EMPRESA ON dbo.recibocobro.empresa = dbo.EMPRESA.empresa LEFT OUTER JOIN
+                      dbo.clientes ON dbo.recibocobro.empresa = dbo.clientes.empresa AND dbo.recibocobroabonan.nomcliente = dbo.clientes.razonsocial

@@ -1,0 +1,23 @@
+Correccion consulta:
+estadocuentaprov
+
+SELECT     dbo.consultaprov0.*, ordendepagoabonan1.nrorden AS nrorden, ordendepagoabonan1.importe AS debe, dbo.ordendepago.fecha AS fechapago, 
+                      dbo.EMPRESA.razonsocial AS razonsocial, dbo.estadocuentaprov2.debesuma AS debeanterior, dbo.estadocuentaprov2.habersuma AS haberanterior, 
+                      dbo.empreactiva.desde AS fechaanterior, dbo.estadocuentaprov00.Expr1 AS sinc, dbo.ordendepago.anulado, 
+                      dbo.consultaprov0.contado AS Expr1
+FROM         dbo.estadocuentaprov2 RIGHT OUTER JOIN
+                      dbo.ordendepago INNER JOIN
+                      dbo.ordendepagoabonan ordendepagoabonan1 ON dbo.ordendepago.nrorden = ordendepagoabonan1.nrorden AND 
+                      dbo.ordendepago.empresa = ordendepagoabonan1.empresa AND dbo.ordendepago.inicioper = ordendepagoabonan1.inicioper AND 
+                      dbo.ordendepago.finper = ordendepagoabonan1.finper RIGHT OUTER JOIN
+                      dbo.EMPRESA INNER JOIN
+                      dbo.consultaprov0 ON dbo.EMPRESA.empresa = dbo.consultaprov0.empresa INNER JOIN
+                      dbo.empreactiva ON dbo.EMPRESA.empresa = dbo.empreactiva.empresa LEFT OUTER JOIN
+                      dbo.estadocuentaprov00 ON dbo.consultaprov0.proveedor = dbo.estadocuentaprov00.nomproveedor ON 
+                      ordendepagoabonan1.codproveedor = dbo.consultaprov0.codproveedor AND ordendepagoabonan1.empresa = dbo.consultaprov0.empresa AND 
+                      ordendepagoabonan1.comprobante = dbo.consultaprov0.comp ON dbo.estadocuentaprov2.empresa = dbo.EMPRESA.empresa AND 
+                      dbo.estadocuentaprov2.proveedor = dbo.consultaprov0.proveedor
+WHERE     (dbo.consultaprov0.contado <> N'S')
+
+
+Reporte: ecproveedores y ecproveedoressaldos

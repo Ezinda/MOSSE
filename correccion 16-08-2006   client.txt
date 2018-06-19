@@ -1,0 +1,55 @@
+se borran las consultas:
+
+estadocuentaclien
+estadocuentaclien0
+estadocuentaclien00
+estadocuentaclien1
+estadocuentaclien2
+consultaclien0
+
+
+se dan de alta las consultas:
+
+estacuentaclientes:
+SELECT     empresa, fecha, cliente, total, saldo, tipocompr + N'  ' + numcompr AS comprobante
+FROM         dbo.libroventas
+WHERE     (total <> 0)
+
+estacuentaclientes1:
+SELECT     *
+FROM         estadocuentaclientes2
+UNION ALL
+SELECT     *
+FROM         estadocuentaclientes3
+
+estacuentaclientes2:
+SELECT     dbo.recibocobroabonan.empresa, NULL AS fecha, dbo.recibocobroabonan.nomcliente AS cliente, NULL AS total, 
+                      ' Sin Comprobante' AS comprobante, NULL AS saldo, dbo.recibocobroabonan.fechacompro, dbo.recibocobroabonan.importe, 
+                      dbo.recibocobroabonan.nrorden, dbo.recibocobro.anulado
+FROM         dbo.recibocobroabonan LEFT OUTER JOIN
+                      dbo.recibocobro ON dbo.recibocobroabonan.nrorden = dbo.recibocobro.nrorden
+WHERE     (dbo.recibocobro.anulado = N'N') AND (dbo.recibocobroabonan.comprobante IS NULL) OR
+                      (dbo.recibocobro.anulado IS NULL) AND (dbo.recibocobroabonan.comprobante IS NULL)
+
+
+estacuentaclientes3:
+SELECT     dbo.estadocuentaclientes.empresa, dbo.estadocuentaclientes.fecha, dbo.estadocuentaclientes.cliente, dbo.estadocuentaclientes.total, 
+                      dbo.estadocuentaclientes.comprobante, dbo.estadocuentaclientes.saldo, dbo.recibocobroabonan.fechacompro, dbo.recibocobroabonan.importe, 
+                      dbo.recibocobroabonan.nrorden, dbo.recibocobro.anulado
+FROM         dbo.recibocobroabonan LEFT OUTER JOIN
+                      dbo.recibocobro ON dbo.recibocobroabonan.empresa = dbo.recibocobro.empresa AND 
+                      dbo.recibocobroabonan.nrorden = dbo.recibocobro.nrorden RIGHT OUTER JOIN
+                      dbo.estadocuentaclientes ON dbo.recibocobroabonan.comprobante = dbo.estadocuentaclientes.comprobante AND 
+                      dbo.recibocobroabonan.empresa = dbo.estadocuentaclientes.empresa
+WHERE     (dbo.recibocobro.anulado = N'N') OR
+                      (dbo.recibocobro.anulado IS NULL)
+
+REPORTES:
+SE CREAN LOS REPORTES
+estadocuentaclientes.rpt
+estadocuentaclientessaldos.rpt
+
+SE BORRAN LOS REPORTES
+ecclientessaldos.rpt
+ecclientes.rpt
+

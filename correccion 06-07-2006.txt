@@ -1,0 +1,100 @@
+modificacion COnsultas
+
+consultaordesnpago:
+SELECT ordendepago.nrorden, ordendepago.empresa, 
+    ordendepagoabonan.nomproveedor, 
+    ordendepagoabonan.comprobante, 
+    ordendepagoabonan.fechacompro, 
+    ordendepagoabonan.importe, ordendepagoabonan.codcuenta, 
+    ordendepago.inicioper, ordendepago.finper, 
+    ordendepagoabonan.id, EMPRESA.razonsocial, EMPRESA.cuit, 
+    EMPRESA.domicilio, EMPRESA.localidad, EMPRESA.telefono, 
+    ordendepago.fecha, proveedores.domicilio AS domprov, 
+    proveedores.localidad AS locprov, 
+    proveedores.cuit AS cuitprov, 
+    ordendepagoabonan.saldofactura, ordendepago.idasiento, 
+    ordendepago.anulado
+FROM ordendepago INNER JOIN
+    ordendepagoabonan ON 
+    ordendepago.nrorden = ordendepagoabonan.nrorden AND 
+    ordendepago.inicioper = ordendepagoabonan.inicioper AND 
+    ordendepago.empresa = ordendepagoabonan.empresa INNER JOIN
+    EMPRESA ON 
+    ordendepago.empresa = EMPRESA.empresa INNER JOIN
+    empreactiva ON 
+    ordendepago.empresa = empreactiva.empresa LEFT OUTER JOIN
+    proveedores ON 
+    EMPRESA.empresa = proveedores.empresa AND 
+    ordendepagoabonan.nomproveedor = proveedores.razonsocial
+
+
+consultaordendepagoinstrumento:
+SELECT ordendepagoinstrumento.nrorden, 
+    ordendepagoinstrumento.instrumento, 
+    ordendepagoinstrumento.denominacion, 
+    ordendepagoinstrumento.comprobante, 
+    ordendepagoinstrumento.fechacompro, 
+    ordendepagoinstrumento.importe, 
+    ordendepagoinstrumento.codcuenta, 
+    ordendepagoinstrumento.fechavencim
+FROM consultaordesnpago INNER JOIN
+    ordendepagoinstrumento ON 
+    consultaordesnpago.nrorden = ordendepagoinstrumento.nrorden
+     INNER JOIN
+    empreactiva ON 
+    ordendepagoinstrumento.empresa = empreactiva.empresa
+GROUP BY ordendepagoinstrumento.nrorden, 
+    ordendepagoinstrumento.instrumento, 
+    ordendepagoinstrumento.denominacion, 
+    ordendepagoinstrumento.comprobante, 
+    ordendepagoinstrumento.fechacompro, 
+    ordendepagoinstrumento.importe, 
+    ordendepagoinstrumento.codcuenta, 
+    ordendepagoinstrumento.fechavencim
+
+consultareciboscobro:
+SELECT recibocobro.nrorden, recibocobro.empresa, 
+    recibocobroabonan.nomcliente, 
+    recibocobroabonan.comprobante, 
+    recibocobroabonan.fechacompro, recibocobroabonan.importe, 
+    recibocobroabonan.codcuenta, recibocobro.inicioper, 
+    recibocobro.finper, recibocobroabonan.id, 
+    EMPRESA.razonsocial, EMPRESA.cuit, EMPRESA.domicilio, 
+    EMPRESA.localidad, EMPRESA.telefono, recibocobro.fecha, 
+    clientes.domicilio AS domprov, clientes.localidad AS locprov, 
+    clientes.cuit AS cuitprov, 
+    recibocobroabonan.saldofactura
+FROM recibocobro INNER JOIN
+    EMPRESA ON 
+    recibocobro.empresa = EMPRESA.empresa INNER JOIN
+    recibocobroabonan ON 
+    recibocobro.nrorden = recibocobroabonan.nrorden AND 
+    recibocobro.empresa = recibocobroabonan.empresa AND 
+    recibocobro.inicioper = recibocobroabonan.inicioper INNER JOIN
+    clientes ON 
+    recibocobroabonan.nomcliente = clientes.razonsocial AND 
+    recibocobro.empresa = clientes.empresa
+
+consultarecibocobroinstrumento:
+SELECT recibocobroinstrumento.nrorden, 
+    recibocobroinstrumento.instrumento, 
+    recibocobroinstrumento.denominacion, 
+    recibocobroinstrumento.comprobante, 
+    recibocobroinstrumento.fechacompro, 
+    recibocobroinstrumento.importe, 
+    recibocobroinstrumento.codcuenta, 
+    recibocobroinstrumento.fechavencim
+FROM consultarecibocobro INNER JOIN
+    recibocobroinstrumento ON 
+    consultarecibocobro.nrorden = recibocobroinstrumento.nrorden INNER
+     JOIN
+    empreactiva ON 
+    recibocobroinstrumento.empresa = empreactiva.empresa
+GROUP BY recibocobroinstrumento.nrorden, 
+    recibocobroinstrumento.instrumento, 
+    recibocobroinstrumento.denominacion, 
+    recibocobroinstrumento.comprobante, 
+    recibocobroinstrumento.fechacompro, 
+    recibocobroinstrumento.importe, 
+    recibocobroinstrumento.codcuenta, 
+    recibocobroinstrumento.fechavencim

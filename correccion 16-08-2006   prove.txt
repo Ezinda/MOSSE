@@ -1,0 +1,57 @@
+se borran las consultas:
+
+estadocuentaprov
+estadocuentaprov0
+estadocuentaprov00
+estadocuentaprov1
+estadocuentaprov2
+consultaprov0
+
+
+se dan de alta las consultas:
+
+estacuentaproveedores:
+ECT     empresa, fecha, proveedor, total, saldo, tipocompr + N'  ' + numcompr AS comprobante
+FROM         dbo.librocompras
+WHERE     (total <> 0)
+
+estacuentaproveedores1:
+SELECT     *
+FROM         estadocuentaproveedores2
+UNION ALL
+SELECT     *
+FROM         estadocuentaproveedores3
+
+estacuentaproveedores2:
+SELECT     dbo.ordendepagoabonan.empresa, NULL AS fecha, dbo.ordendepagoabonan.nomproveedor AS proveedor, NULL AS total, 
+                      ' Sin Comprobante' AS comprobante, NULL AS saldo, dbo.ordendepagoabonan.fechacompro, dbo.ordendepagoabonan.importe, 
+                      dbo.ordendepagoabonan.nrorden, dbo.ordendepago.anulado
+FROM         dbo.ordendepagoabonan LEFT OUTER JOIN
+                      dbo.ordendepago ON dbo.ordendepagoabonan.nrorden = dbo.ordendepago.nrorden
+WHERE     (dbo.ordendepago.anulado = N'N') AND (dbo.ordendepagoabonan.comprobante IS NULL) OR
+                      (dbo.ordendepago.anulado IS NULL) AND (dbo.ordendepagoabonan.comprobante IS NULL)
+
+
+estacuentaclientes3:
+SELECT     dbo.estadocuentaproveedores.empresa, dbo.estadocuentaproveedores.fecha, dbo.estadocuentaproveedores.proveedor, 
+                      dbo.estadocuentaproveedores.total, dbo.estadocuentaproveedores.comprobante, dbo.estadocuentaproveedores.saldo, 
+                      dbo.ordendepagoabonan.fechacompro, dbo.ordendepagoabonan.importe, dbo.ordendepagoabonan.nrorden, dbo.ordendepago.anulado
+FROM         dbo.ordendepagoabonan LEFT OUTER JOIN
+                      dbo.ordendepago ON dbo.ordendepagoabonan.nrorden = dbo.ordendepago.nrorden AND 
+                      dbo.ordendepagoabonan.empresa = dbo.ordendepago.empresa RIGHT OUTER JOIN
+                      dbo.estadocuentaproveedores ON dbo.ordendepagoabonan.empresa = dbo.estadocuentaproveedores.empresa AND 
+                      dbo.ordendepagoabonan.comprobante = dbo.estadocuentaproveedores.comprobante
+WHERE     (dbo.ordendepago.anulado = N'N') OR
+                      (dbo.ordendepago.anulado IS NULL)
+
+
+
+REPORTES:
+SE CREAN LOS REPORTES
+estadocuentaproveedores.rpt
+estadocuentaproveedoressaldos.rpt
+
+SE BORRAN LOS REPORTES
+ecproveedoressaldos.rpt
+ecproveedores.rpt
+

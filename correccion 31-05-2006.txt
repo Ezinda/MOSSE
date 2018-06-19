@@ -1,0 +1,8 @@
+Alta nueva tabla: auditoria
+3	id	int	4	0   clave identidad 1
+0	fecha	datetime	8	1
+0	hora	nvarchar	8	1
+0	ventana	nvarchar	50	1
+0	accion	nvarchar	100	1
+0	usuario	nvarchar	15	1
+2	empresa	int	4	0   clave

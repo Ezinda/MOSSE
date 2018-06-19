@@ -1,0 +1,453 @@
+[Root]
+Most Recent Package=Paquete de instalación estándar 1
+Most Recent Deploy=Distribución de Web 1
+
+
+[Package|Paquete de instalación estándar 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete
+
+[Package|Paquete de instalación estándar 1|Configure DAO ISAMs]
+Applicable=Yes
+Xbase=Yes
+Excel=Yes
+Exchange=Yes
+Text=Yes
+Jet 2.x=Yes
+Lotus=Yes
+Paradox=Yes
+
+[Package|Paquete de instalación estándar 1|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|Paquete de instalación estándar 1|Files Found]
+
+[Package|Paquete de instalación estándar 1|Files Released]
+FM20.DLL=
+u2LBAR.DLL=
+u25TOTAL.DLL=
+u25STORE.DLL=
+exportmodeller.dll=
+p2BBDE.DLL=
+Crystal=
+PG32CONV.DLL=
+SSCSDK80.DLL=
+
+[Package|Paquete de instalación estándar 1|Missing Dependency Information]
+C:\Windows\System32\MSEXCH35.DLL=
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFEOCX.ocx=
+C:\Program Files (x86)\SC\WSAFIPFE\WSPAMIOCX.ocx=
+C:\Program Files (x86)\SC\WSAFIPFE\MisDatos.ocx=
+C:\MARCELO\Z_EMPRESAS\INGENIO\PRODUCCION\INGENIO_marcelo\KlexGrid.ocx=
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_emporio\KewlButtonz.ocx=
+C:\Program Files (x86)\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=
+C:\MARCELO\Z_EMPRESAS\FACTURA ELECTRONICA CONTROL\MSCOMCTL.OCX=
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\PluginManager.dll=
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\InfoStor.dll=
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\EnterpriseFramework.dll=
+C:\Program Files (x86)\Seagate Software\WCS\EnDiagnostics.dll=
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFEPHP.dll=
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFE.tlb=
+C:\Users\marcelo\Desktop\Labruna\FEAFIP.tlb=
+C:\MARCELO\Z_EMPRESAS\COOPERATIVA TABACALEROS\VB_INFORMES\actskin4.ocx=
+C:\Program Files (x86)\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=
+C:\Windows\SysWOW64\cpeaut32.dll=
+C:\Program Files (x86)\Seagate Software\Shared\SAStarter.dll=
+C:\Program Files (x86)\Seagate Software\Shared\crtslv.dll=
+C:\Program Files (x86)\Seagate Software\Shared\rdwiz.dll=
+C:\Program Files (x86)\Seagate Software\Report Designer Component\crystalwizard.dll=
+C:\Program Files (x86)\Seagate Software\Report Designer Component\craxdui.dll=
+C:\Program Files (x86)\Seagate Software\Shared\Cdo32.dll=
+C:\Program Files (x86)\Microsoft Visual Studio\VIntDev98\bin\DTCRT.DLL=
+C:\Program Files (x86)\Common Files\System\ado\msado20.tlb=
+
+[Package|Paquete de instalación estándar 1|Out-of-Date Dependency Information]
+C:\Windows\SysWOW64\COMCT332.OCX=
+C:\Windows\SysWOW64\comdlg32.ocx=
+C:\Windows\SysWOW64\TABCTL32.OCX=
+
+[Package|Paquete de instalación estándar 1|Files Added]
+
+[Package|Paquete de instalación estándar 1|Files Removed]
+
+[Package|Paquete de instalación estándar 1|Files In Project]
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\pos.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\VB6ES.DLL=Yes
+C:\Program Files (x86)\Common Files\System\ado\msado20.tlb=Yes
+C:\Windows\SysWOW64\MSBIND.DLL=Yes
+C:\Windows\SysWOW64\MSSTDFMT.DLL=Yes
+C:\Windows\SysWOW64\STDFTES.DLL=Yes
+C:\Program Files (x86)\Common Files\designer\MSDERUN.DLL=Yes
+C:\Windows\SysWOW64\DAO350.DLL=Yes
+C:\Windows\SysWOW64\MSJET35.DLL=Yes
+C:\Windows\SysWOW64\MSJTER35.DLL=Yes
+C:\Windows\SysWOW64\MSJINT35.DLL=Yes
+C:\Windows\SysWOW64\vbajet32.dll=Yes
+C:\Windows\SysWOW64\expsrv.dll=Yes
+C:\Windows\SysWOW64\MSRD2X35.DLL=Yes
+C:\Windows\SysWOW64\MSREPL35.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Windows\SysWOW64\VB5DB.DLL=Yes
+C:\Windows\SysWOW64\MSDBRPTR.DLL=Yes
+C:\Windows\SysWOW64\DBRPRES.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VIntDev98\bin\DTCRT.DLL=Yes
+C:\Program Files (x86)\Seagate Software\Shared\Cdo32.dll=Yes
+C:\Program Files (x86)\Seagate Software\Report Designer Component\craxdrt.dll=Yes
+C:\Program Files (x86)\Seagate Software\Report Designer Component\craxddrt.dll=Yes
+C:\Windows\System32\IMPLODE.DLL=Yes
+C:\Windows\System32\Crpaig80.dll=Yes
+C:\Windows\System32\msvcrt.dll=Yes
+C:\Windows\System32\mfc42.dll=Yes
+C:\Windows\System32\P2smon.dll=Yes
+C:\Program Files (x86)\Seagate Software\Report Designer Component\craxdui.dll=Yes
+C:\Program Files (x86)\Seagate Software\Report Designer Component\crystalwizard.dll=Yes
+C:\Program Files (x86)\Seagate Software\Shared\rdwiz.dll=Yes
+C:\Program Files (x86)\Seagate Software\Shared\crtslv.dll=Yes
+C:\Program Files (x86)\Seagate Software\Shared\SAStarter.dll=Yes
+C:\Windows\SysWOW64\cpeaut32.dll=Yes
+C:\Program Files (x86)\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=Yes
+C:\Program Files (x86)\Seagate Software\Viewers\ActiveXViewer\crviewer.dll=Yes
+C:\MARCELO\Z_EMPRESAS\COOPERATIVA TABACALEROS\VB_INFORMES\actskin4.ocx=Yes
+C:\Users\marcelo\Desktop\Labruna\FEAFIP.tlb=Yes
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFE.tlb=Yes
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFEPHP.dll=Yes
+C:\Program Files (x86)\Seagate Software\WCS\EnDiagnostics.dll=Yes
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\EnterpriseFramework.dll=Yes
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\InfoStor.dll=Yes
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\PluginManager.dll=Yes
+C:\Windows\SysWOW64\MSRDC20.OCX=Yes
+C:\Windows\SysWOW64\MSRDO20.DLL=Yes
+C:\Windows\SysWOW64\RDOCURS.DLL=Yes
+C:\Windows\SysWOW64\RDO20ES.DLL=Yes
+C:\Windows\SysWOW64\RDC20ES.DLL=Yes
+C:\Windows\SysWOW64\TABCTL32.OCX=Yes
+C:\Windows\SysWOW64\TABCTES.DLL=Yes
+C:\Windows\SysWOW64\MSFLXGRD.OCX=Yes
+C:\Windows\SysWOW64\FLXGDES.DLL=Yes
+C:\Windows\SysWOW64\comdlg32.ocx=Yes
+C:\Windows\SysWOW64\CMDLGES.DLL=Yes
+C:\MARCELO\Z_EMPRESAS\FACTURA ELECTRONICA CONTROL\MSCOMCTL.OCX=Yes
+C:\Windows\SysWOW64\MSCOMCT2.OCX=Yes
+C:\Windows\SysWOW64\MSCC2ES.DLL=Yes
+C:\Windows\SysWOW64\RICHTX32.OCX=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\SysWOW64\RCHTXES.DLL=Yes
+C:\Windows\SysWOW64\MSCHRT20.OCX=Yes
+C:\Windows\SysWOW64\MSCH2ES.DLL=Yes
+C:\Windows\SysWOW64\MSWINSCK.OCX=Yes
+C:\Windows\SysWOW64\WINSKES.DLL=Yes
+C:\Windows\SysWOW64\MSMAPI32.OCX=Yes
+C:\Windows\SysWOW64\MSMPIES.DLL=Yes
+C:\Windows\SysWOW64\MCI32.OCX=Yes
+C:\Windows\SysWOW64\MCIES.DLL=Yes
+C:\Windows\SysWOW64\PICCLP32.OCX=Yes
+C:\Windows\SysWOW64\PCCLPES.DLL=Yes
+C:\Windows\SysWOW64\MSCOMM32.OCX=Yes
+C:\Windows\SysWOW64\MSCOMES.DLL=Yes
+C:\Windows\SysWOW64\MSMASK32.OCX=Yes
+C:\Windows\SysWOW64\MSMSKES.DLL=Yes
+C:\Windows\SysWOW64\MSDATGRD.OCX=Yes
+C:\Windows\SysWOW64\DATGDES.DLL=Yes
+C:\Windows\SysWOW64\MSDATLST.OCX=Yes
+C:\Windows\SysWOW64\DATLSES.DLL=Yes
+C:\Windows\SysWOW64\COMCT332.OCX=Yes
+C:\Windows\SysWOW64\CMCT3ES.DLL=Yes
+C:\Windows\SysWOW64\MSADODC.OCX=Yes
+C:\Windows\SysWOW64\ADODCES.DLL=Yes
+C:\Windows\SysWOW64\MSHFLXGD.OCX=Yes
+C:\Windows\SysWOW64\MSHFGES.DLL=Yes
+C:\Windows\SysWOW64\Crystl32.OCX=Yes
+C:\Windows\SysWOW64\crpe32.dll=Yes
+C:\Windows\Crystal\Crxlat32.dll=Yes
+C:\Windows\SysWOW64\P2bbnd.dll=Yes
+C:\Windows\SysWOW64\p2bdao.dll=Yes
+C:\Windows\Crystal\p2bxbse.dll=Yes
+C:\Windows\SysWOW64\p2ctdao.dll=Yes
+C:\Windows\SysWOW64\p2irdao.dll=Yes
+C:\Windows\Crystal\p2sifmx.dll=Yes
+C:\Windows\SysWOW64\p2sodbc.dll=Yes
+C:\Windows\Crystal\p2sora7.dll=Yes
+C:\Windows\Crystal\p2ssql.dll=Yes
+C:\Windows\Crystal\p2ssyb10.dll=Yes
+C:\Windows\Crystal\p2soledb.dll=Yes
+C:\Windows\Crystal\u2ddisk.dll=Yes
+C:\Windows\Crystal\u2dmapi.dll=Yes
+C:\Windows\Crystal\u2dnotes.dll=Yes
+C:\Windows\Crystal\u2dpost.dll=Yes
+C:\Windows\Crystal\u2dvim.dll=Yes
+C:\Windows\Crystal\u2dapp.dll=Yes
+C:\Windows\Crystal\u2fcr.dll=Yes
+C:\Windows\Crystal\u2fhtml.dll=Yes
+C:\Windows\Crystal\u2fodbc.dll=Yes
+C:\Windows\Crystal\u2frec.dll=Yes
+C:\Windows\Crystal\crxf_rtf.dll=Yes
+C:\Windows\Crystal\u2fsepv.dll=Yes
+C:\Windows\Crystal\u2ftext.dll=Yes
+C:\Windows\Crystal\u2fwks.dll=Yes
+C:\Windows\Crystal\u2fwordw.dll=Yes
+C:\Windows\Crystal\u2fxls.dll=Yes
+C:\Windows\Crystal\crxf_pdf.dll=Yes
+C:\Windows\Crystal\u25dts.dll=Yes
+C:\Windows\Crystal\u2l2000.dll=Yes
+C:\Windows\Crystal\u2lcom.dll=Yes
+C:\Windows\Crystal\u2ldts.dll=Yes
+C:\Windows\Crystal\u2lsamp1.dll=Yes
+C:\Windows\Crystal\u252000.dll=Yes
+C:\Windows\SysWOW64\SYSINFO.OCX=Yes
+C:\Windows\SysWOW64\SYSINES.DLL=Yes
+C:\Windows\SysWOW64\DBGRID32.OCX=Yes
+C:\Windows\SysWOW64\DBGRDES.DLL=Yes
+C:\Program Files (x86)\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_emporio\KewlButtonz.ocx=Yes
+C:\MARCELO\Z_EMPRESAS\INGENIO\PRODUCCION\INGENIO_marcelo\KlexGrid.ocx=Yes
+C:\Program Files (x86)\SC\WSAFIPFE\MisDatos.ocx=Yes
+C:\Program Files (x86)\SC\WSAFIPFE\WSPAMIOCX.ocx=Yes
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFEOCX.ocx=Yes
+C:\Windows\System32\MSEXCL35.DLL=Yes
+C:\Windows\System32\MSEXCH35.DLL=Yes
+C:\Windows\System32\MSLTUS35.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Windows\System32\MSPDOX35.DLL=Yes
+C:\Windows\System32\MSTEXT35.DLL=Yes
+C:\Windows\System32\MSXBSE35.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Paquete de instalación estándar 1|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Install Locations]
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\pos.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB6ES.DLL=$(WinSysPath)
+C:\Program Files (x86)\Common Files\System\ado\msado20.tlb=$(WinSysPath)
+C:\Windows\SysWOW64\MSBIND.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSSTDFMT.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\STDFTES.DLL=$(WinSysPath)
+C:\Program Files (x86)\Common Files\designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\Windows\SysWOW64\DAO350.DLL=$(MSDAOPath)
+C:\Windows\SysWOW64\MSJET35.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\VB5DB.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSDBRPTR.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\DBRPRES.DLL=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VIntDev98\bin\DTCRT.DLL=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Shared\Cdo32.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Report Designer Component\craxdrt.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Report Designer Component\craxddrt.dll=$(WinSysPath)
+C:\Windows\System32\IMPLODE.DLL=$(WinSysPath)
+C:\Windows\System32\Crpaig80.dll=$(WinSysPath)
+C:\Windows\System32\msvcrt.dll=$(WinSysPath)
+C:\Windows\System32\mfc42.dll=$(WinSysPath)
+C:\Windows\System32\P2smon.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Report Designer Component\craxdui.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Report Designer Component\crystalwizard.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Shared\rdwiz.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Shared\crtslv.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Shared\SAStarter.dll=$(WinSysPath)
+C:\Windows\SysWOW64\cpeaut32.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Viewers\ActiveXViewer\sviewhlp.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Viewers\ActiveXViewer\crviewer.dll=$(WinSysPath)
+C:\MARCELO\Z_EMPRESAS\COOPERATIVA TABACALEROS\VB_INFORMES\actskin4.ocx=$(WinSysPath)
+C:\Users\marcelo\Desktop\Labruna\FEAFIP.tlb=$(WinSysPath)
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFE.tlb=$(WinSysPath)
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFEPHP.dll=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\WCS\EnDiagnostics.dll=$(AppPath)
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\EnterpriseFramework.dll=$(AppPath)
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\InfoStor.dll=$(AppPath)
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\PluginManager.dll=$(AppPath)
+C:\Windows\SysWOW64\MSRDC20.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSRDO20.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RDOCURS.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RDO20ES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RDC20ES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\TABCTES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSFLXGRD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\FLXGDES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\comdlg32.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\CMDLGES.DLL=$(WinSysPath)
+C:\MARCELO\Z_EMPRESAS\FACTURA ELECTRONICA CONTROL\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCC2ES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\RCHTXES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSCHRT20.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCH2ES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSWINSCK.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\WINSKES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSMAPI32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSMPIES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MCI32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MCIES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\PICCLP32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\PCCLPES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMM32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSMSKES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSDATGRD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\DATGDES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSDATLST.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\DATLSES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\COMCT332.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\CMCT3ES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSADODC.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\ADODCES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSHFLXGD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSHFGES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\Crystl32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\crpe32.dll=$(WinSysPath)
+C:\Windows\Crystal\Crxlat32.dll=$(WinSysPath)
+C:\Windows\SysWOW64\P2bbnd.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2bdao.dll=$(WinSysPath)
+C:\Windows\Crystal\p2bxbse.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2ctdao.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2irdao.dll=$(WinSysPath)
+C:\Windows\Crystal\p2sifmx.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2sodbc.dll=$(WinSysPath)
+C:\Windows\Crystal\p2sora7.dll=$(WinSysPath)
+C:\Windows\Crystal\p2ssql.dll=$(WinSysPath)
+C:\Windows\Crystal\p2ssyb10.dll=$(WinSysPath)
+C:\Windows\Crystal\p2soledb.dll=$(WinSysPath)
+C:\Windows\Crystal\u2ddisk.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dmapi.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dnotes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dpost.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dvim.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dapp.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fcr.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fhtml.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fodbc.dll=$(WinSysPath)
+C:\Windows\Crystal\u2frec.dll=$(WinSysPath)
+C:\Windows\Crystal\crxf_rtf.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fsepv.dll=$(WinSysPath)
+C:\Windows\Crystal\u2ftext.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fwks.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fwordw.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fxls.dll=$(WinSysPath)
+C:\Windows\Crystal\crxf_pdf.dll=$(WinSysPath)
+C:\Windows\Crystal\u25dts.dll=$(WinSysPath)
+C:\Windows\Crystal\u2l2000.dll=$(WinSysPath)
+C:\Windows\Crystal\u2lcom.dll=$(WinSysPath)
+C:\Windows\Crystal\u2ldts.dll=$(WinSysPath)
+C:\Windows\Crystal\u2lsamp1.dll=$(WinSysPath)
+C:\Windows\Crystal\u252000.dll=$(WinSysPath)
+C:\Windows\SysWOW64\SYSINFO.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\SYSINES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\DBGRID32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\DBGRDES.DLL=$(WinSysPath)
+C:\Program Files (x86)\Seagate Software\Viewers\ActiveXViewer\cselexpt.ocx=$(WinSysPath)
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_emporio\KewlButtonz.ocx=$(WinSysPath)
+C:\MARCELO\Z_EMPRESAS\INGENIO\PRODUCCION\INGENIO_marcelo\KlexGrid.ocx=$(WinSysPath)
+C:\Program Files (x86)\SC\WSAFIPFE\MisDatos.ocx=$(WinSysPath)
+C:\Program Files (x86)\SC\WSAFIPFE\WSPAMIOCX.ocx=$(WinSysPath)
+C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFEOCX.ocx=$(WinSysPath)
+C:\Windows\System32\MSEXCL35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSEXCH35.DLL=$(WinSysPath)
+C:\Windows\System32\MSLTUS35.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Windows\System32\MSPDOX35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSTEXT35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSXBSE35.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Paquete de instalación estándar 1|Configure Shared Files]
+Applicable=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\pos.exe=No
+C:\Program Files (x86)\Seagate Software\WCS\EnDiagnostics.dll=No
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\EnterpriseFramework.dll=No
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\InfoStor.dll=No
+C:\Program Files (x86)\Seagate Software\Enterprise\x86\PluginManager.dll=No
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Paquete de instalación estándar 1|Distribution]
+Type=multi
+Size=2.88 MB
+Title=pos
+
+[Package|Paquete de instalación estándar 1|IconGroups]
+Group0=pos
+PrivateGroup0=Verdadero
+Parent0=$(Programs)
+
+[Package|Paquete de instalación estándar 1|pos]
+Icon1=pos.exe
+Title1=pos
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Paquete de instalación estándar 1|Package]
+PackageFolder=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete
+ProjectFolder=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2
+ServerSideCab=
+File1=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\setup.exe
+File2=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\Setup.Lst
+File3=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos1.CAB
+File4=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos2.CAB
+File5=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos3.CAB
+File6=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos4.CAB
+File7=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos5.CAB
+File8=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos6.CAB
+File9=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos7.CAB
+File10=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos8.CAB
+File11=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos9.CAB
+File12=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos10.CAB
+File13=C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos11.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz
+
+[Deploy|Distribución de Web 1|Root]
+Package=Paquete de instalación estándar 1
+Handler=PDWizard.WebPostDplySubWiz
+
+[Deploy|Distribución de Web 1|Package Files]
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\setup.exe=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\SETUP.LST=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos1.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos2.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos3.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos4.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos5.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos6.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos7.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos8.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos9.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos10.CAB=Yes
+C:\MARCELO\Z_EMPRESAS\POS_NUEVO\pv_mosse_2\Paquete\pos11.CAB=Yes
+
+[Deploy|Distribución de Web 1|Other Files and Folders]
+c:\marcelo\z_empresas\pos_nuevo\pv_mosse_2=
+
+[Deploy|Distribución de Web 1|WebPost Site]
+URL=https://github.com/Ezinda/MOSSE.git
+Provider={8B14B770-748C-11D0-A309-00C04FD7CFC5}
+Explode=No

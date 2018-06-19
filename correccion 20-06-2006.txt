@@ -1,0 +1,16 @@
+Modificacion Consulta
+consultaordesnpago:
+
+SELECT     dbo.ordendepago.nrorden, dbo.ordendepago.empresa, dbo.ordendepagoabonan.nomproveedor, dbo.ordendepagoabonan.comprobante, 
+                      dbo.ordendepagoabonan.fechacompro, dbo.ordendepagoabonan.importe, dbo.ordendepagoabonan.codcuenta, dbo.ordendepago.inicioper, 
+                      dbo.ordendepago.finper, dbo.ordendepagoabonan.id, dbo.EMPRESA.razonsocial, dbo.EMPRESA.cuit, dbo.EMPRESA.domicilio, 
+                      dbo.EMPRESA.localidad, dbo.EMPRESA.telefono, dbo.ordendepago.fecha, dbo.proveedores.domicilio AS domprov, 
+                      dbo.proveedores.localidad AS locprov, dbo.proveedores.cuit AS cuitprov, dbo.ordendepagoabonan.saldofactura, dbo.ordendepago.idasiento, 
+                      dbo.ordendepago.anulado
+FROM         dbo.ordendepago INNER JOIN
+                      dbo.ordendepagoabonan ON dbo.ordendepago.nrorden = dbo.ordendepagoabonan.nrorden AND 
+                      dbo.ordendepago.inicioper = dbo.ordendepagoabonan.inicioper AND dbo.ordendepago.empresa = dbo.ordendepagoabonan.empresa INNER JOIN
+                      dbo.EMPRESA ON dbo.ordendepago.empresa = dbo.EMPRESA.empresa LEFT OUTER JOIN
+                      dbo.proveedores ON dbo.EMPRESA.empresa = dbo.proveedores.empresa AND dbo.ordendepagoabonan.nomproveedor = dbo.proveedores.razonsocial
+
+Correccion Archivo: ordendepago.rpt Y ORDENDEPAGO1.RPT

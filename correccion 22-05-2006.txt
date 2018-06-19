@@ -1,0 +1,46 @@
+vista 
+Conceptosabonan
+se modifica:
+
+SELECT librocompras.fecha, librocompras.proveedor, 
+    librocompras.inicioper, librocompras.finper, 
+    librocompras.numcompr, librocompras.total, 
+    librocompras.tipocompr, 
+    librocompras.tipocompr + N'  ' + librocompras.numcompr AS comp,
+     librocompras.saldo, librocompras.cht, librocompras.id, 
+    librocompras.imputado, librocompras.contado, 
+    librocompras.empresa, proveedores.codproveedor
+FROM librocompras INNER JOIN
+    proveedores ON 
+    librocompras.empresa = proveedores.empresa AND 
+    librocompras.cuit = proveedores.cuit
+WHERE (librocompras.saldo <> 0) AND 
+    (NOT (librocompras.contado = N's')) OR
+    (librocompras.saldo IS NULL) AND 
+    (NOT (librocompras.contado = N's')) OR
+    (librocompras.saldo IS NULL) AND 
+    (librocompras.contado IS NULL)
+
+
+Vista 
+conceptoscobran
+se modifica:
+
+SELECT libroventas.fecha, libroventas.cliente, libroventas.inicioper, 
+    libroventas.finper, libroventas.numcompr, libroventas.total, 
+    libroventas.tipocompr, LEFT(libroventas.tipocompr, 3) 
+    + '  ' + RIGHT(libroventas.numcompr, 13) AS comp, 
+    libroventas.saldo, libroventas.cdt, libroventas.id, 
+    libroventas.imputado, libroventas.contado, 
+    libroventas.empresa, clientes.codcliente
+FROM libroventas INNER JOIN
+    clientes ON libroventas.empresa = clientes.empresa AND 
+    libroventas.cliente = clientes.razonsocial
+WHERE (libroventas.saldo <> 0) AND 
+    (NOT (libroventas.contado = N's')) OR
+    (libroventas.saldo IS NULL) AND 
+    (NOT (libroventas.contado = N's')) OR
+    (libroventas.saldo IS NULL) AND (libroventas.contado IS NULL)
+
+
+

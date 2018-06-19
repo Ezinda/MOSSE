@@ -1,0 +1,56 @@
+Línea 198: la clase Project1.jeffMaskedEdit del control importes no era una clase de control cargada.
+Línea 259: la clase Project1.jeffMaskedEdit del control subtotal no era una clase de control cargada.
+Línea 284: la clase Project1.jeffMaskedEdit del control subtotal no era una clase de control cargada.
+Línea 309: la clase Project1.jeffMaskedEdit del control subtotal no era una clase de control cargada.
+Línea 334: la clase Project1.jeffMaskedEdit del control subtotal no era una clase de control cargada.
+Línea 359: la clase Project1.jeffMaskedEdit del control total no era una clase de control cargada.
+Línea 204: el nombre de la propiedad _ExtentX de importes no es válido.
+Línea 205: el nombre de la propiedad _ExtentY de importes no es válido.
+Línea 216: el nombre de la propiedad Format de importes no es válido.
+Línea 217: el nombre de la propiedad SelText de importes no es válido.
+Línea 218: el nombre de la propiedad Text de importes no es válido.
+Línea 219: el nombre de la propiedad HideSelection de importes no es válido.
+Línea 220: el nombre de la propiedad Locked de importes no es válido.
+Línea 221: el nombre de la propiedad Alignment de importes no es válido.
+Línea 198: no se pudo establecer la propiedad MouseIcon de importes.
+Línea 266: el nombre de la propiedad _ExtentX de subtotal no es válido.
+Línea 267: el nombre de la propiedad _ExtentY de subtotal no es válido.
+Línea 278: el nombre de la propiedad Format de subtotal no es válido.
+Línea 279: el nombre de la propiedad SelText de subtotal no es válido.
+Línea 280: el nombre de la propiedad Text de subtotal no es válido.
+Línea 281: el nombre de la propiedad HideSelection de subtotal no es válido.
+Línea 282: el nombre de la propiedad Alignment de subtotal no es válido.
+Línea 259: no se pudo establecer la propiedad MouseIcon de subtotal.
+Línea 291: el nombre de la propiedad _ExtentX de subtotal no es válido.
+Línea 292: el nombre de la propiedad _ExtentY de subtotal no es válido.
+Línea 303: el nombre de la propiedad Format de subtotal no es válido.
+Línea 304: el nombre de la propiedad SelText de subtotal no es válido.
+Línea 305: el nombre de la propiedad Text de subtotal no es válido.
+Línea 306: el nombre de la propiedad HideSelection de subtotal no es válido.
+Línea 307: el nombre de la propiedad Alignment de subtotal no es válido.
+Línea 284: no se pudo establecer la propiedad MouseIcon de subtotal.
+Línea 316: el nombre de la propiedad _ExtentX de subtotal no es válido.
+Línea 317: el nombre de la propiedad _ExtentY de subtotal no es válido.
+Línea 328: el nombre de la propiedad Format de subtotal no es válido.
+Línea 329: el nombre de la propiedad SelText de subtotal no es válido.
+Línea 330: el nombre de la propiedad Text de subtotal no es válido.
+Línea 331: el nombre de la propiedad HideSelection de subtotal no es válido.
+Línea 332: el nombre de la propiedad Alignment de subtotal no es válido.
+Línea 309: no se pudo establecer la propiedad MouseIcon de subtotal.
+Línea 341: el nombre de la propiedad _ExtentX de subtotal no es válido.
+Línea 342: el nombre de la propiedad _ExtentY de subtotal no es válido.
+Línea 353: el nombre de la propiedad Format de subtotal no es válido.
+Línea 354: el nombre de la propiedad SelText de subtotal no es válido.
+Línea 355: el nombre de la propiedad Text de subtotal no es válido.
+Línea 356: el nombre de la propiedad HideSelection de subtotal no es válido.
+Línea 357: el nombre de la propiedad Alignment de subtotal no es válido.
+Línea 334: no se pudo establecer la propiedad MouseIcon de subtotal.
+Línea 365: el nombre de la propiedad _ExtentX de total no es válido.
+Línea 366: el nombre de la propiedad _ExtentY de total no es válido.
+Línea 377: el nombre de la propiedad Format de total no es válido.
+Línea 378: el nombre de la propiedad SelText de total no es válido.
+Línea 379: el nombre de la propiedad Text de total no es válido.
+Línea 380: el nombre de la propiedad HideSelection de total no es válido.
+Línea 381: el nombre de la propiedad Locked de total no es válido.
+Línea 382: el nombre de la propiedad Alignment de total no es válido.
+Línea 359: no se pudo establecer la propiedad MouseIcon de total.
